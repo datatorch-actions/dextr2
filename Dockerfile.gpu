@@ -6,7 +6,7 @@ RUN apt-get install 'ffmpeg'\
     'libsm6'\ 
     'libxext6' -y
 
-RUN apt install liblzma-dev
+RUN apt install -y liblzma-dev
 
 WORKDIR /workspace
 COPY requirements_container.txt /workspace

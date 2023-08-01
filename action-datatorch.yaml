@@ -20,7 +20,7 @@ inputs:
       port if not found.
   image:
     type: string
-    default: datatorch/action-dextr
+    default: add3000/dextr_test
     description: Docker image to spin up.
   annotationId:
     type: string

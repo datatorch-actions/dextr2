@@ -19,15 +19,14 @@ Pillow==8.0.1
 pyparsing==2.4.7
 python-dateutil==2.8.1
 PyWavelets==1.1.1
-scikit-build==0.11.1
-scikit-image==0.17.2
 scipy==1.5.4
 six==1.15.0
 tifffile==2020.9.3
-torch==1.10.0
-torchvision
+torch-1.4.0+cpu-cp37-cp37m-linux_x86_64.whl
+torchvision==0.5.0
 typing-extensions==3.7.4.3
 Werkzeug==1.0.1
 xmljson==0.2.1
 imantics
-dextr @ git+https://github.com/ninthreezy/dextr@master
+scikit-image==0.19.1
+dextr @ git+https://github.com/aoxolotl/dextr@test_req

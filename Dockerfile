@@ -8,8 +8,9 @@ RUN apt-get install 'ffmpeg'\
 RUN apt install -y liblzma-dev
 
 WORKDIR /workspace
+RUN wget https://download.pytorch.org/whl/cpu/torch-1.4.0%2Bcpu-cp37-cp37m-linux_x86_64.whl
 COPY requirements_container.txt /workspace
-COPY torch-1.4.0+cpu-cp37-cp37m-linux_x86_64.whl /workspace
+#COPY torch-1.4.0+cpu-cp37-cp37m-linux_x86_64.whl /workspace
 #RUN pip install numpy
 RUN pip install -r requirements_container.txt
 RUN python -c "from dextr.model import DextrModel; DextrModel.pascalvoc_resunet101()"

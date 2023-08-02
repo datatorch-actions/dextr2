@@ -72,6 +72,7 @@ def call_dextr(path: str, points: List[Point], address: str) -> List[List[Point]
     print(f"Points = {points}")
 
     response = requests.post(address, json={"path": container_path, "points": points})
+    print(f"Response = {response})
     json = response.json()
     return json["polygons"]
 

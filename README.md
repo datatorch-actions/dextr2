@@ -63,7 +63,7 @@ jobs:
           name: ${{ event.fileName }}
 
       - name: Predict Segmentation
-        action: datatorch/dextr@latest
+        action: datatorch/dextr2@latest
         inputs:
           # Download file path from the previous action.
           imagePath: ${{ variable.path }}

@@ -154,7 +154,7 @@ def send_request():
                 break
             print(f"Attempt {attempts}: Could not connect to dextr.")
             start_server(address.port or 80)
-            time.sleep(5)
+            time.sleep(1500)
 
     print("Could not send request.")
     exit(1)
